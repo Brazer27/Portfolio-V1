@@ -8,25 +8,25 @@ export default {
           id: 1,
           name: 'LinkedIN',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
-          status: 'Intermediate'
+          status: 'null'
         },
         {
           id: 2,
           name: 'GitHub',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-          status: 'Intermediate'
+          status: 'null'
         },                    
         {
           id: 3,
           name: 'E-mail',
           imageUrl: 'https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png',
-          status: 'Intermediate'
+          status: 'null'
         },
         {
           id: 4,
           name: 'Instagram',
           imageUrl: 'https://cdn-icons-png.freepik.com/256/15789/15789364.png?semt=ais_hybrid',
-          status: 'Intermediate'
+          status: 'null'
         }
       ],
     };
@@ -42,55 +42,65 @@ export default {
           <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
           <h4>My Contacts</h4>
           <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
-            Feel free to contact me from my social media below.</h4>
+            Feel free to contact me using the information below.</h4>
         </div>
       </header>
       <section>
         <div>
-          <div class="grid grid-cols-1 gap-4 pb-32 md:grid-cols-3 md:gap-3 xl:grid-cols-3 xl:gap-3 2xl:gap-5 fade-zoom-in">
-            <div v-for="item in items" :key="item.id">
+          <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
+            <li class="mr-2">
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
+            </li>
+            <li class="mr-2">
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">Tools</button>
+            </li>
+          </ul>
+        </div>
+        <div v-show="activeTab === 1">
+          <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+            <div v-for="item in tech" :key="item.id">
               <div
-                class="item-card flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 ">
-                <div class="flex h-12 w-12 items-center justify-center p-0 h-full w-full lg:p-0 zoom-in">
-                  <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
-                    :src="'/img/portfolio-' + item.imageUrl + '.png'">
+                class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
+                <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
+                  <img alt="HTML" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]  "
+                    :src="item.imageUrl" style="color: transparent;">
                 </div>
-                <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
-                  <div class="title-text font-medium text-secondary">{{ item.name }}
+                <div class="flex items-center text-sm md:text-base lg:text-lg">
+                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
                   </div>
-                  <div class="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
+                  <div
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
                     {{ item.status }}</div>
-                  <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">
-                    {{ item.tech }}
-                  </div>
-                  <div class="w-full flex justify-end">
-                    <div class="flex cursor-pointer items-end gap-2 text-primary">
-                      <a v-if="item.github !== 'null'"
-                        :href="item.github" target="_blank" rel="noreferrer"
-                        title="View github repository" class="transition-all hover:text-accent">
-                        <svg stroke="currentColor"
-                          fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
-                          height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                          </path>
-                        </svg></a>
-                        <a v-if="item.demo !== 'null'" :href="item.demo" target="_blank" rel="noreferrer"
-                        title="View finished project" class="transition-all hover:text-accent">
-                        <svg stroke="currentColor"
-                          fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
-                          height="18" width="18" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                          <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg></a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div v-show="activeTab === 2">
+          <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+            <div v-for="item in tools" :key="item.id">
+              <div
+                class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
+                <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
+                  <img alt="HTML" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]  "
+                    :src="item.imageUrl" style="color: transparent;">
+                </div>
+                <div class="flex items-center text-sm md:text-base lg:text-lg">
+                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
+                  </div>
+                  <div
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                    {{ item.status }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </article>
 </div></template>
 
