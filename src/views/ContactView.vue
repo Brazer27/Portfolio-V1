@@ -8,24 +8,28 @@ export default {
           id: 1,
           name: 'LinkedIN',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
-          url: 'https://www.linkedin.com/in/febryan-riyadi-2705n412'
+          status: 'work',
+          url: 'https://www.linkedin.com/in/febryan-riyadi'
         },
         {
           id: 2,
           name: 'GitHub',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          status: 'project list',
           url: 'https://github.com/Brazer27'
         },                    
         {
           id: 3,
           name: 'E-mail',
           imageUrl: 'https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png',
+          status: 'contact me',
           url: 'mailto:febryanriyadi03@gmail.com'
         },
         {
           id: 4,
           name: 'Instagram',
           imageUrl: 'https://cdn-icons-png.freepik.com/256/15789/15789364.png?semt=ais_hybrid',
+          status: 'social media',
           url: 'https://www.instagram.com/febryan_4123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
         }
       ],
@@ -64,6 +68,9 @@ export default {
                 <div class="flex items-center text-sm md:text-base lg:text-lg">
                   <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
                   </div>
+                  <div
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                    {{ item.status }}</div>
                 </div>
               </div>
             </div>
