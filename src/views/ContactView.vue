@@ -8,42 +8,36 @@ export default {
           id: 1,
           name: 'LinkedIN',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
-          status: 'null'
+          status: 'null',
+          url: 'https://www.linkedin.com' // Add URL for LinkedIN
         },
         {
           id: 2,
           name: 'GitHub',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-          status: 'null'
+          status: 'null',
+          url: 'https://www.github.com' // Add URL for GitHub
         },                    
         {
           id: 3,
           name: 'E-mail',
           imageUrl: 'https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png',
-          status: 'null'
+          status: 'null',
+          url: 'mailto:someone@example.com' // Add mailto for E-mail
         },
         {
           id: 4,
           name: 'Instagram',
           imageUrl: 'https://cdn-icons-png.freepik.com/256/15789/15789364.png?semt=ais_hybrid',
-          status: 'null'
+          status: 'null',
+          url: 'https://www.instagram.com' // Add URL for Instagram
         }
       ],
     };
   },
   methods: {
-    redirectTo(name) {
-      let url = '';
-      if (name === 'LinkedIN') {
-        url = 'www.linkedin.com/in/febryan-riyadi-7ab340219';
-      } else if (name === 'GitHub') {
-        url = 'https://github.com/Brazer27';
-      } else if (name === 'E-mail') {
-        url = 'mailto:febryanriyadi03@gmail.com'; // Update to your actual email
-      } else if (name === 'Instagram') {
-        url = 'https://www.instagram.com/febryan_4123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==';
-      }
-      window.open(url, '_blank');
+    openLink(url) {
+      window.open(url, '_blank'); // Open the link in a new tab
     }
   }
 }
@@ -61,29 +55,27 @@ export default {
         </div>
       </header>
       <section>
-        <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
-          <div v-for="item in tech" :key="item.id" @click="redirectTo(item.name)">
-            <div
-              class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
-              <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
-                <img alt="HTML" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
-                  class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                  :src="item.imageUrl" style="color: transparent;">
-              </div>
-              <div class="flex items-center text-sm md:text-base lg:text-lg">
-                <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">
-                  {{ item.name }}
+          <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+            <div v-for="item in tech" :key="item.id">
+              <div
+                @click="openLink(item.url)"  <!-- Added @click -->
+                class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
+                <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
+                  <img alt="HTML" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
+                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]  "
+                    :src="item.imageUrl" style="color: transparent;">
                 </div>
-                <div
-                  class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
-                  {{ item.status }}
+                <div class="flex items-center text-sm md:text-base lg:text-lg">
+                  <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
+                  </div>
+                  <div
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                    {{ item.status }}</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
-    </article>
-  </div>
+  </article>
+</div>
 </template>
-
