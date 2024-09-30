@@ -42,7 +42,7 @@ export default {
           <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
           <h4>My Contacts</h4>
           <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
-            Feel free to contact me using the information below.</h4>
+            Feel free to contact me from my social media below.</h4>
         </div>
       </header>
       <section>
