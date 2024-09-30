@@ -10,7 +10,7 @@ export default {
           imageUrl: 'sehati',
           status: 'Mental health application that helps users manage their well-being through stress assessments and informative articles.',
           tech: 'PHP, Blade',
-          github: 'https://github.com/rakha-elctrnx/Portofolio-v2',
+          github: 'https://github.com/Brazer27/Project-Software-Enginering',
           demo: 'null'
         },
         {
@@ -19,7 +19,7 @@ export default {
           imageUrl: 'gymme',
           status: 'Online platform for purchasing health supplements, allowing users to shop easily and enabling store admins to manage inventory and sales.',
           tech: 'JavaScript, CSS',
-          github: 'null',
+          github: 'https://github.com/Brazer27/Project-PSD',
           demo: 'null'
         },
         {
