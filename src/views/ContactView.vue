@@ -9,28 +9,28 @@ export default {
           name: 'LinkedIN',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
           status: 'null',
-          url: 'https://www.linkedin.com' // Add URL for LinkedIN
+          url: 'www.linkedin.com/in/febryan-riyadi-7ab340219' // Add URL for LinkedIN
         },
         {
           id: 2,
           name: 'GitHub',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
           status: 'null',
-          url: 'https://www.github.com' // Add URL for GitHub
+          url: 'https://github.com/Brazer27' // Add URL for GitHub
         },                    
         {
           id: 3,
           name: 'E-mail',
           imageUrl: 'https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png',
           status: 'null',
-          url: 'mailto:someone@example.com' // Add mailto for E-mail
+          url: 'mailto:febryanriyadi03@gmail.com' // Add mailto for E-mail
         },
         {
           id: 4,
           name: 'Instagram',
           imageUrl: 'https://cdn-icons-png.freepik.com/256/15789/15789364.png?semt=ais_hybrid',
           status: 'null',
-          url: 'https://www.instagram.com' // Add URL for Instagram
+          url: 'https://www.instagram.com/febryan_4123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' // Add URL for Instagram
         }
       ],
     };
