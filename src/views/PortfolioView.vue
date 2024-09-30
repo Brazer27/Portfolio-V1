@@ -9,7 +9,7 @@ export default {
           name: 'SEHATI',
           imageUrl: 'sehati',
           status: 'Mental health application that helps users manage their well-being through stress assessments and informative articles.',
-          tech: 'VueJS 3, Tailwind',
+          tech: 'PHP, Blade',
           github: 'https://github.com/rakha-elctrnx/Portofolio-v2',
           demo: 'null'
         },
