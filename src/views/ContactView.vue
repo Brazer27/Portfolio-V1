@@ -44,7 +44,7 @@ export default {
 
 
 <template>
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-teal-50 mx-3">
     <article data-page="about">
       <header>
         <div class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
@@ -55,7 +55,7 @@ export default {
         </div>
       </header>
       <section>
-        <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+        <div class="grid grid-cols-2 gap-3 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
           <!-- Loop through the tech array -->
           <div v-for="item in tech" :key="item.id">
             <!-- Added @click event to handle link opening -->
