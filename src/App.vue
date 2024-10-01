@@ -7,7 +7,7 @@
           <span class="self-center text-lg text-[#70ffc8] font-semibold whitespace-nowrap fadein-bot hover:text-teal-100">febryanriyadi;</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
-  <a href="/path/to/your/cv.pdf" download class="text-[#70ffc8] hover:text-teal-100 mr-4">
+  <a href="/file/cvfebryan.pdf" download class="text-[#70ffc8] hover:text-teal-100 mr-4">
     <button class="bg-[#70ffc8] text-gray-700 py-1 px-3 rounded-full hover:bg-teal-100 transition">Download CV</button>
   </a>
   <a href="https://github.com/Brazer27">
