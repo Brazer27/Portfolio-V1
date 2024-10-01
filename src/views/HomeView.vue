@@ -138,9 +138,9 @@ body {
 }
 
 .pict {
-  box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
--webkit-box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
--moz-box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
+  box-shadow: 0px 0px 73px -9px rgba(141, 255, 112, 0.44);
+-webkit-box-shadow: 0px 0px 73px -9px rgba(141, 255, 112, 0.44);
+-moz-box-shadow: 0px 0px 73px -9px rgba(141, 255, 112, 0.44);
 }
 
 .fadein-up {
