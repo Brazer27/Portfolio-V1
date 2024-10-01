@@ -13,7 +13,7 @@ export default {
         {
           id: 2,
           name: 'GitHub',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          imageUrl: 'https://img.icons8.com/m_sharp/200/FFFFFF/github.png',
           status: 'project list',
           url: 'https://github.com/Brazer27'
         },
@@ -49,7 +49,7 @@ export default {
       <header>
         <div class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
           <h4>My Contacts</h4>
-          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
+          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-teal-300">
             Feel free to contact me using the information below.
           </h4>
         </div>
@@ -59,13 +59,13 @@ export default {
           <!-- Loop through the tech array -->
           <div v-for="item in tech" :key="item.id">
             <!-- Added @click event to handle link opening -->
-            <div @click="openLink(item.url)" class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
+            <div @click="openLink(item.url)" class="item-tech flex cursor-pointer items-center gap-2 rounded border border-teal-200 px-2 py-2 hover:bg-teal-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
               <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
                 <img :src="item.imageUrl" alt="Contact Logo" loading="lazy" class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]" />
               </div>
               <div class="flex items-center text-sm md:text-base lg:text-lg">
                 <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0">{{ item.name }}</div>
-                <div class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                <div class="status-tech opacity-0 absolute mt-5 text-[10px] text-teal-200 transition-all duration-300 md:text-xs lg:text-sm">
                   {{ item.status }}
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default {
 }
 
 svg:hover {
-  stroke: #ffdb70;
+  stroke: #70ffc8;
 }
 
 @keyframes fadeZoomIn {
