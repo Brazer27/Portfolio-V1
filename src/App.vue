@@ -6,7 +6,7 @@
     <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-[#121212] bg-opacity-80">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <button @click="redirectToHome" class="flex">
-          <span class="self-center text-lg text-[#ffdb70] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100">febryanriyadi;</span>
+          <span class="self-center text-lg text-[#70ffc8] font-semibold whitespace-nowrap fadein-bot hover:text-teal-100">febryanriyadi;</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
           <a href="https://github.com/Brazer27"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
@@ -79,7 +79,7 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #88ff70;
+  background: #70ffc8;
   border-radius: 5px;
 }
 
@@ -119,7 +119,7 @@ nav a.router-link-exact-active::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #83ff70;
+  background-color: #70ffc8;
 }
 
 nav a.router-link-exact-active:hover {
