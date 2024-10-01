@@ -1,14 +1,19 @@
 <template>
   <div class="max-w-7xl mx-auto flex flex-col relative">
-
+    
     <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-[#121212] bg-opacity-80">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <button @click="redirectToHome" class="flex">
           <span class="self-center text-lg text-[#70ffc8] font-semibold whitespace-nowrap fadein-bot hover:text-teal-100">febryanriyadi;</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/Brazer27"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
-        </div>
+  <a href="/path/to/your/cv.pdf" download class="text-[#70ffc8] hover:text-teal-100 mr-4">
+    <button class="bg-[#70ffc8] text-white py-2 px-4 rounded hover:bg-teal-100 transition">Download CV</button>
+  </a>
+  <a href="https://github.com/Brazer27">
+    <img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github">
+  </a>
+  </div>
         <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
           <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li>
