@@ -91,7 +91,7 @@ export default {
       <header>
         <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
           About Me &nbsp;
-          <div class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate" data-aos="zoom-in-left"
+          <div class="h-[1px] w-32 bg-teal-200 md:w-96 aos-init aos-animate" data-aos="zoom-in-left"
             data-aos-duration="600"></div>
         </div>
       </header>
@@ -121,7 +121,7 @@ export default {
     </article>
   </div>
 
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-teal-50 mx-3">
     <article data-page="about">
       <header>
         <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
@@ -135,7 +135,7 @@ export default {
           <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-teal-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
+                :class="{ 'text-teal-200 bg-teal-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
             </li>
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
