@@ -55,7 +55,7 @@ export default {
         </div>
       </header>
       <section>
-        <div class="grid grid-cols-2 gap-3 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+        <div class="grid grid-cols-2 gap-3 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12 fade-zoom-in">
           <!-- Loop through the tech array -->
           <div v-for="item in tech" :key="item.id">
             <!-- Added @click event to handle link opening -->
