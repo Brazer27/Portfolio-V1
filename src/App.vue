@@ -1,29 +1,32 @@
 <template>
-  <!-- component -->
   <div class="max-w-7xl mx-auto flex flex-col relative">
+
     <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen backdrop-blur-md bg-[#121212] bg-opacity-80">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <button @click="redirectToHome" class="flex">
           <span class="self-center text-lg text-[#70ffc8] font-semibold whitespace-nowrap fadein-bot hover:text-teal-100">febryanriyadi;</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/Brazer27">
-            <img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github">
-          </a>
+          <a href="https://github.com/Brazer27"><img class="w-9 rounded-full" src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="github"></a>
         </div>
         <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1" id="mobile-menu-3">
           <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <a href="#home" @click.prevent="scrollToSection('home')" class="fadein-bot text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Home</a>
+              <router-link to="/"
+                class="fadein-bot text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0"
+                aria-current="page">Home</router-link>
             </li>
             <li>
-              <a href="#about" @click.prevent="scrollToSection('about')" class="fadein-bot fadein-1 text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">About</a>
+              <router-link to="/about"
+                class="fadein-bot fadein-1 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">About</router-link>
             </li>
             <li>
-              <a href="#portfolio" @click.prevent="scrollToSection('portfolio')" class="fadein-bot fadein-2 text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Portfolio</a>
+              <router-link to="/portfolio"
+                class="fadein-bot fadein-2 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Portfolio</router-link>
             </li>
             <li>
-              <a href="#contact" @click.prevent="scrollToSection('contact')" class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Contact</a>
+              <router-link to="/contact"
+                class="fadein-bot fadein-3 text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-gray-500 md:p-0">Contact</router-link>
             </li>
           </ul>
         </div>
@@ -33,35 +36,28 @@
     <div class="md:mt-[100px]">
       <router-view />
     </div>
-
-    <footer class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-[#383838] bg-[#121212] bg-opacity-80 backdrop-blur-md backdrop-opacity-90">
-      <nav class="flex justify-around py-4 text-xs">
-        <a href="#home" @click.prevent="scrollToSection('home')" class="text-gray-300 hover:text-white">Home</a>
-        <a href="#about" @click.prevent="scrollToSection('about')" class="text-gray-300 hover:text-white">About</a>
-        <a href="#portfolio" @click.prevent="scrollToSection('portfolio')" class="text-gray-300 hover:text-white">Portfolio</a>
-        <a href="#contact" @click.prevent="scrollToSection('contact')" class="text-gray-300 hover:text-white">Contact</a>
-      </nav>
-    </footer>
   </div>
+  <footer class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-[#383838] bg-[#121212] bg-opacity-80 backdrop-blur-md backdrop-opacity-90">
+  <nav class="flex justify-around py-4 text-xs">
+    <router-link to="/" class="text-gray-300 hover:text-white">Home</router-link>
+    <router-link to="/about" class="text-gray-300 hover:text-white">About</router-link>
+    <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
+    <router-link to="/contact" class="text-gray-300 hover:text-white">Contact</router-link>
+  </nav>
+</footer>
 </template>
 
 <script>
 export default {
   methods: {
     redirectToHome() {
-      this.$router.push('/');
-    },
-    scrollToSection(section) {
-      const element = document.getElementById(section);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      this.$router.push('/')
     }
   },
 }
 </script>
 
-<style scoped>
+<style>
 *,
 *::before,
 *::after {
