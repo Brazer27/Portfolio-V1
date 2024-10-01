@@ -8,7 +8,7 @@ export default {
           name: 'LinkedIN',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/174/174857.png',
           status: 'work',
-          url: 'https://www.linkedin.com/in/febryan-riyadi'
+          url: 'https://www.linkedin.com/in/febryan-riyadi-2705n412'
         },
         {
           id: 2,
