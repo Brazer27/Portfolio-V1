@@ -72,6 +72,12 @@ export default {
             </div>
           </div>
         </div>
+        <div class="text-2xl text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
+          <h5>My Phone Number</h5>
+          <h5 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-teal-300">
+            +62 822 1543 6168
+          </h5>
+        </div>
       </section>
     </article>
   </div>
