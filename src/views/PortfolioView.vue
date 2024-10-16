@@ -27,7 +27,7 @@ export default {
           name: 'Ceilo',
           imageUrl: 'ceilo',
           status: 'Psychology application that allows users to chat anonymously and consult with professionals, providing a safe space for mental health discussions, along with a forum for community support and interaction.',
-          tech: 'HTML, CSS',
+          tech: 'Vue, CSS',
           github: 'null',
           demo: 'null'
         },
