@@ -107,6 +107,6 @@ svg:hover {
 }
 
 .fade-zoom-in {
-  animation: fadeZoomIn 1s ease-in-out;
+  animation: fadeZoomIn 2s ease-in-out;
 }
 </style>
