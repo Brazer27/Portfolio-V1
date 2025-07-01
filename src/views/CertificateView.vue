@@ -47,6 +47,17 @@ export default {
           skills: ['React Hooks', 'Frontend Styling', 'JavaScript ES6+', 'React.js Development', 'UI Integration'],
           credentialId: 'RH5UtUaRYb',
           verificationUrl: 'https://member.codingstudio.id/certificate/RH5UtUaRYb'
+        },
+        {
+          id: 5,
+          title: 'HIPAA Compliance',
+          issuer: 'Udemy',
+          issuedDate: 'July 2025',
+          imageUrl: 'hipaa',
+          description: 'This certification provides foundational knowledge of HIPAA regulations, privacy and security rules, and how to handle protected health information (PHI) responsibly and compliantly.',
+          skills: ['HIPAA Compliance', 'Data Privacy and Security', 'Healthcare Information Security', 'Protected Health Information (PHI) Management'],
+          credentialId: 'UC-8b910fc1-6a81-4b5c-8a02-3ef8dd2f91f2',
+          verificationUrl: 'https://www.udemy.com/certificate/UC-8b910fc1-6a81-4b5c-8a02-3ef8dd2f91f2/'
         }
       ],
     };
