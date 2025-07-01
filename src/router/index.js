@@ -25,6 +25,12 @@ const routes = [
     name: 'contact',
     component: () => import('../views/ContactView.vue'),
     meta: { title: 'Contact' }
+  },
+  {
+    path: '/certificate',
+    name: 'certificate',
+    component: () => import('../views/CertificateView.vue'),
+    meta: { title: 'Certificate' }
   }
 ]
 
@@ -34,7 +40,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title + ' - febryanriyadi;'; // Mengambil judul dari meta atau mengatur judul default jika tidak ada
+  document.title = to.meta.title + ' - febryan;';
   next();
 });
 
