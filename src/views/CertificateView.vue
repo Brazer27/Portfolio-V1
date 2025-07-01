@@ -36,6 +36,17 @@ export default {
           skills: ['SQL', 'Relational Database Design', 'Microsoft SQL Server', 'Data Manipulation & Query Optimization'],
           credentialId: 'sHmTK9Re54',
           verificationUrl: 'https://member.codingstudio.id/certificate/sHmTK9Re54'
+        },
+        {
+          id: 4,
+          title: 'Mastering Modern Website Development with React JS',
+          issuer: 'Coding Studio',
+          issuedDate: 'June 2025',
+          imageUrl: 'react',
+          description: 'A comprehensive certification that equips learners with foundational to advanced skills in React.js, enabling them to build and deploy dynamic, modern web applications.',
+          skills: ['React Hooks', 'Frontend Styling', 'JavaScript ES6+', 'React.js Development', 'UI Integration'],
+          credentialId: 'RH5UtUaRYb',
+          verificationUrl: 'https://member.codingstudio.id/certificate/RH5UtUaRYb'
         }
       ],
     };
