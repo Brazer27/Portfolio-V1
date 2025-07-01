@@ -86,7 +86,7 @@ export default {
                 </div>
                 <div class="min-w-0 flex-1">
                   <div class="text-xs text-teal-200 font-medium">Phone</div>
-                  <div class="text-white font-medium truncate">{{ contactInfo.phone }}</div>
+                  <div class="text-white font-medium text-sm">{{ contactInfo.phone }}</div>
                 </div>
               </div>
             </div>
@@ -99,9 +99,9 @@ export default {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                 </div>
-                <div class="min-w-0 flex-1">
+                <div class="min-w-0 flex-1 overflow-hidden">
                   <div class="text-xs text-teal-200 font-medium">Email</div>
-                  <div class="text-white font-medium text-sm truncate">{{ contactInfo.email }}</div>
+                  <div class="text-white font-medium text-xs leading-tight">{{ contactInfo.email }}</div>
                 </div>
               </div>
             </div>
@@ -115,9 +115,9 @@ export default {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   </svg>
                 </div>
-                <div class="min-w-0 flex-1">
+                <div class="min-w-0 flex-1 overflow-hidden">
                   <div class="text-xs text-teal-200 font-medium">Location</div>
-                  <div class="text-white font-medium text-sm truncate">{{ contactInfo.location }}</div>
+                  <div class="text-white font-medium text-xs leading-tight">{{ contactInfo.location }}</div>
                 </div>
               </div>
             </div>
@@ -135,13 +135,13 @@ export default {
           
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div v-for="item in tech" :key="item.id">
-              <div @click="openLink(item.url)" class="item-tech flex cursor-pointer items-center gap-4 rounded-lg border border-[#383838] bg-[#1e1e1f] hover:bg-[#282828] hover:border-teal-200 hover:border-opacity-50 p-4 transition-all duration-300 hover:transform hover:-translate-y-1 h-20">
+              <div @click="openLink(item.url)" class="item-tech flex cursor-pointer items-center gap-3 rounded-lg border border-[#383838] bg-[#1e1e1f] hover:bg-[#282828] hover:border-teal-200 hover:border-opacity-50 p-4 transition-all duration-300 hover:transform hover:-translate-y-1 h-20">
                 <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-[#383838] bg-opacity-50 zoom-in flex-shrink-0">
                   <img :src="item.imageUrl" alt="Contact Logo" loading="lazy" class="img-tech drop-shadow-xl transition-all duration-300 h-8 w-8 object-contain" />
                 </div>
-                <div class="flex-1 min-w-0">
-                  <div class="tech font-medium text-white transition-all duration-300 truncate">{{ item.name }}</div>
-                  <div class="text-xs text-teal-200 opacity-75 transition-all duration-300 truncate">
+                <div class="flex-1 min-w-0 overflow-hidden">
+                  <div class="tech font-medium text-white transition-all duration-300 text-sm">{{ item.name }}</div>
+                  <div class="text-xs text-teal-200 opacity-75 transition-all duration-300 leading-tight">
                     {{ item.status }}
                   </div>
                 </div>
