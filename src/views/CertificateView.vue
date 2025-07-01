@@ -163,7 +163,7 @@ export default {
 
 .cert-image-container {
   width: 100%;
-  aspect-ratio: 5/3;
+  aspect-ratio: 3/2;
   overflow: hidden;
   border-radius: 0.75rem;
 }
