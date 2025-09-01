@@ -58,6 +58,17 @@ export default {
           skills: ['HIPAA Compliance', 'Data Privacy and Security', 'Healthcare Information Security', 'Protected Health Information (PHI) Management'],
           credentialId: 'UC-8b910fc1-6a81-4b5c-8a02-3ef8dd2f91f2',
           verificationUrl: 'https://www.udemy.com/certificate/UC-8b910fc1-6a81-4b5c-8a02-3ef8dd2f91f2/'
+        },
+        {
+          id: 6,
+          title: 'PDPA in Singapore',
+          issuer: 'Udemy',
+          issuedDate: 'September 2025',
+          imageUrl: 'pdpa',
+          description: 'This certification provides foundational knowledge of Singapore PDPA, its key components, compliance requirements, and real-world enforcement case studies to strengthen data protection practices.',
+          skills: ['Personal Data Protection Act', 'Data Privacy Compliance', 'Regulatory Compliance (Singapore)', 'Business Compliance & Ethics'],
+          credentialId: 'UC-5cf6606b-7bd0-44d4-bec7-c59eb4a9093a',
+          verificationUrl: 'https://www.udemy.com/certificate/UC-5cf6606b-7bd0-44d4-bec7-c59eb4a9093a/'
         }
       ],
     };
