@@ -128,7 +128,7 @@ export default {
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hello! I’m <strong>Febryan Riyadi</strong>, a 6th-semester Computer Science student at 
+            &nbsp; &nbsp; &nbsp; Hello! I’m <strong>Febryan Riyadi</strong>, a 7th-semester Computer Science student at 
             <strong>BINUS University</strong>, Indonesia, majoring in <strong>Software Engineering</strong>. I'm currently working as a 
             <strong>Front-End Developer Intern</strong> at <strong>Periksa.ID</strong>, where I’m actively involved in building and optimizing web applications.
           </p>
