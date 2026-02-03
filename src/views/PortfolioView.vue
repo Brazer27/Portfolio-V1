@@ -46,11 +46,11 @@ export default {
           id: 1,
           company: 'Periksa.ID',
           role: 'Front End Developer Intern',
-          period: 'Feb 2025 - Now',
+          period: 'Feb 2025 - Jan 2026',
           description: 'Developed and maintained healthcare management system interfaces using Angular and TypeScript. Collaborated with backend team to integrate Golang APIs and implemented various UI/UX improvements for hospital management modules. Worked on critical healthcare features including patient management, medical records, and administrative systems.',
           technologies: ['Angular', 'TypeScript', 'Golang', 'HTML', 'SCSS', 'JavaScript', 'CSS', 'Git'],
           achievements: [
-            'Successfully resolved 35+ critical issues across various hospital management modules',
+            'Successfully resolved 70+ critical issues across various hospital management modules',
             'Implemented UI improvements for user profile and medical record management systems',
             'Developed API integrations for multiple healthcare modules using Golang',
             'Enhanced patient management features with advanced filtering and pagination',
